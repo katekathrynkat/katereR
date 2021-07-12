@@ -1,6 +1,6 @@
-Binding: hello_world
-Title: Example Project Template
-OpenFiles: INDEX
+Binding: eco_analysis
+Title: katereR: Ecology analysis template
+OpenFiles: README.md
 
 Parameter: check
 Widget: CheckboxInput
