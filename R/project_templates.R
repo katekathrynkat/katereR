@@ -40,7 +40,7 @@ eco_analysis <- function(path, ...) {
   )
   
   # write to README.md
-  writeLines(contents, "README.md"))
+  writeLines(contents, "README.md")
 
   
 ##### CREATE FILE STRUCTURE #####
