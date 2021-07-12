@@ -1,8 +1,22 @@
+# library(usethis)
 
 eco_analysis <- function(path, ...) {
   
-  # ensure path exists
+  ##### CREATE PROJECT PATH #####
+  
+  # use name inputted by user
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
+  
+  # set as working directory
+  setwd(file.path(getwd(), path))
+  
+  
+  ##### COLLECT INPUTS #####
+
+    dots <- list(...)
+  
+  
+  ##### CREATE README #####
   
   # generate header
   header <- c(
@@ -11,13 +25,12 @@ eco_analysis <- function(path, ...) {
     ""
   )
   
-  # collect inputs
-  dots <- list(...)
-  text <- lapply(seq_along(dots), function(i) {
-    key <- names(dots)[[i]]
-    val <- dots[[i]]
-    paste0(key, ": ", val)
-  })
+  text <- lapply(seq_along(dots),
+                 function(i) {
+                   key <- names(dots)[[i]]
+                   val <- dots[[i]]
+                   paste0(key, ": ", val)
+                 })
   
   # collect into single text string
   contents <- paste(
@@ -26,7 +39,38 @@ eco_analysis <- function(path, ...) {
     sep = "\n"
   )
   
-  # write to index file
-  writeLines(contents, con = file.path(path, "INDEX"))
+  # write to README.md
+  writeLines(contents, "README.md"))
+
+  
+##### CREATE FILE STRUCTURE #####
+
+  dir.create("code", recursive = TRUE, showWarnings = FALSE)
+  dir.create("code_archive", recursive = TRUE, showWarnings = FALSE)
+  dir.create("data_output", recursive = TRUE, showWarnings = FALSE)
+  dir.create("data_raw", recursive = TRUE, showWarnings = FALSE)
+  dir.create("data_raw/external", recursive = TRUE, showWarnings = FALSE)
+  dir.create("data_raw/field", recursive = TRUE, showWarnings = FALSE)
+  dir.create("data_raw/literature", recursive = TRUE, showWarnings = FALSE)
+  dir.create("data_raw/spatial", recursive = TRUE, showWarnings = FALSE)
+  dir.create("docs", recursive = TRUE, showWarnings = FALSE)
+  dir.create("figs", recursive = TRUE, showWarnings = FALSE)
+
+  
+  ##### CREATE LICENSE #####
+  # use_mit_license("")
+  
+  
+  ##### CREATE GIT REPO #####
+  
+  # create .gitignore if selected
+  if (dots[["create_gitignore"]]) {
+    git_ignores <- c(".Rhistory", ".Rapp.history", ".RData",
+                     ".Ruserdata", ".Rproj.user/", ".Renviron")
+    writeLines(paste(git_ignores, sep = "\n"), ".gitignore")
+  }
+  
+  # use_git()
+  
   
 }
