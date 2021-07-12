@@ -1,4 +1,4 @@
-name: docket
+name: analysis
 description: >
-   On the docket: Basic all-purpose document
+   Template for statistical analysis.
 create_dir: FALSE
