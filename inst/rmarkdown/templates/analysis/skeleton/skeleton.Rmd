@@ -2,7 +2,7 @@
 title: "Template - analysis"
 subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
 output:
-  RmdoctoR::docket:
+  katereR::analysis:
     toc: TRUE
     code_folding: "hide"
 ---
@@ -32,7 +32,7 @@ Brief summary goes here
 ```{r packages and data, include=FALSE}
 
 # Packages
-library(tidyverse)
+# library(tidyverse)
 
 # Source code
 # source('code/source_fig_aesthetics.R')

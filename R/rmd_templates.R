@@ -1,8 +1,8 @@
 library(rmarkdown)
 library(htmltools)
 
-# Features of the docket template
-docket <- function(toc = TRUE, code_folding = "hide") {
+# Features of the analysis template
+analysis <- function(toc = TRUE, code_folding = "hide") {
 
   # get the locations of resource files located within the package
   css <- system.file("rmarkdown", "templates", "analysis",
