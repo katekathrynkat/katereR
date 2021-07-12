@@ -1,0 +1,100 @@
+---
+title: "Template - analysis"
+subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
+output:
+  RmdoctoR::docket:
+    toc: TRUE
+    code_folding: "hide"
+---
+
+**Kate Culhane**, Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara  
+[kathrynculhane@ucsb.edu](kathrynculhane@ucsb.edu)
+[<i class="fa fa-github"></i>](https://github.com/katekathrynkat/)
+[<i class="fa fa-twitter"></i>](https://twitter.com/katekathrynkat/)
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_knit$set(root.dir = '..')
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                      fig.width=5, fig.height=3)
+```
+
+<div class = "summary">
+
+Brief summary goes here
+
+</div>
+
+**Output files**
+
+- **file_name.ext**: Brief description
+
+```{r packages and data, include=FALSE}
+
+# Packages
+library(tidyverse)
+
+# Source code
+# source('code/source_fig_aesthetics.R')
+# source('code/source_data_import.R')
+
+# Data
+
+
+```
+
+## First analysis {.tabset .tabset-fade .tabset-pills}
+
+
+
+Summary
+
+```{r include=FALSE}
+
+# Code to be hidden
+
+```
+
+
+### Tab 1
+
+Description of important statistical results / figures 
+
+```{r fig.height=3, fig.width=5}
+
+# Code for figure
+
+```
+
+```{r}
+# Code for stats
+```
+
+### Tab 2
+
+Data
+
+### Tab 3
+
+Notes
+
+<div class = "important">
+
+Something important
+
+</div>
+
+## Notes & resources
+
+- 
+
+<br>
+<br>
+<br>
+
+<details><summary>**Session info**</summary>
+```{r code}
+devtools::session_info()
+```
+</details>
+

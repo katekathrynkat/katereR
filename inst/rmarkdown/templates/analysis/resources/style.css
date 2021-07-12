@@ -1,0 +1,51 @@
+/* Spacing for headers */
+h1.title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+h3.subtitle {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+h2, .h2 {
+  margin-top: 80px;
+  border-bottom: solid;
+  padding: 4px;
+}
+h3, .h3 {
+    margin-top: 60px;
+}
+
+/* Div formatting */
+div.summary {
+  background-color:#DAF5F0;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 3px;
+  margin: 40px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+div.important {
+  background-color:#EEF3F9;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+/* Fontawesome icon style */
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-github:hover {
+  opacity: 0.7;
+}
+.fa-twitter:hover {
+  opacity: 0.7;
+}
