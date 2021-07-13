@@ -1,0 +1,61 @@
+Binding: eco_analysis
+Title: katereR: Ecology analysis template
+OpenFiles: README.md
+
+
+
+Parameter: project_name
+Widget: TextInput
+Label: Project name
+Default: path
+Position: left
+
+Parameter: data_external
+Widget: CheckboxInput
+Label: Raw data type: External
+Default: On
+Position: left
+
+Parameter: data_field
+Widget: CheckboxInput
+Label: Raw data type: Field
+Default: On
+Position: left
+
+Parameter: data_literature
+Widget: CheckboxInput
+Label: Raw data type: Literature
+Default: On
+Position: left
+
+Parameter: data_spatial
+Widget: CheckboxInput
+Label: Raw data type: Spatial
+Default: On
+Position: left
+
+
+
+Parameter: license
+Widget: CheckboxInput
+Label: Add MIT license?
+Default: On
+Position: right
+
+Parameter: github
+Widget: CheckboxInput
+Label: Create GitHub repo?
+Default: On
+Position: right
+
+Parameter: renv
+Widget: CheckboxInput
+Label: Use renv package management?
+Default: On
+Position: right
+
+Parameter: website
+Widget: CheckboxInput
+Label: Create website using GitHub Pages?
+Default: On
+Position: right

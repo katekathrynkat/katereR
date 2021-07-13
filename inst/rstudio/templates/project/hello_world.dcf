@@ -1,9 +1,0 @@
-Binding: eco_analysis
-Title: katereR: Ecology analysis template
-OpenFiles: README.md
-
-Parameter: create_gitignore
-Widget: CheckboxInput
-Label: Create .gitignore?
-Default: On
-Position: right
