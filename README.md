@@ -1,6 +1,6 @@
 # katereR
 
-Templates for Kate's favorite docs, plots, scripts, and projects.
+A package with Kate's favorite templates and themes.
 
 - [RStudio project templates](#rstudio-project-templates)
 - [R Markdown templates](#r-markdown-templates)
