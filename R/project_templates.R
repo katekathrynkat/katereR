@@ -21,7 +21,7 @@ eco_analysis <- function(path, ...) {
   ##### CREATE README #####
   
   readme <- paste(
-    paste0("# ", path, ": ", project_name),
+    paste0("# ", path, ": ", dots[["project_name"]]),
     "Description goes here",
     "",
     paste0("View analyses at https://katekathrynkat.github.io/", path),
@@ -115,7 +115,7 @@ eco_analysis <- function(path, ...) {
     site_yml <- paste(
       paste0('name: "', path, '"'),
       'navbar:',
-      paste0('  title: "', project_name, '"'),
+      paste0('  title: "', dots[["project_name"]], '"'),
       '  left:',
       '    - text: "Home"',
       '      icon: fa-home',
