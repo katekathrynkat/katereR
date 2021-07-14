@@ -30,12 +30,13 @@ t_index <- function(rmd_dir = "R_markdowns", # where to save CSS relative to roo
                      "index", "style_index.css", package = "katereR")
   
   # copy to the specified directory (default /R_markdowns)
-  file.copy(css, paste0(rmd_dir, "/", basename(css)), overwrite = FALSE)
+  file.copy(css, paste0(getwd(), "/", rmd_dir, "/", basename(css)),
+            overwrite = FALSE)
   
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
                            highlight = "pygments",
-                           css = paste0(rmd_dir, "/style_index.css"),
+                           css = paste0(getwd(), "/", rmd_dir, "/", basename(css)),
                            toc = toc,
                            toc_float = TRUE,
                            toc_depth = 3,
