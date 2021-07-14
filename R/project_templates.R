@@ -30,17 +30,17 @@ eco_analysis <- function(path, ...) {
     "## Directory structure",
     "",
     "    .",
-    "    ├── data_raw         # Raw data files",
-    "        ├── external         # Data from external sources",
-    "        ├── field            # Field/lab measurements",
-    "        ├── literature       # Data compiled from the literature",
-    "        └── spatial          # Maps and other spatial files",
-    "    ├── docs             # Documents summarizing analyses (.html compiled from .Rmd)",
-    "    ├── output           # Figures (.png) and data (.csv) generated during analyses",
-    "    ├── R_markdowns      # Code for analyses (.Rmd)",
-    "    ├── R_scripts        # Scripts containing source code, functions, etc. (.R)",
-    "        └── archive          # Unorganized snippets of ill-fated code (view at your own risk)",
-    "    └── README.md        # You are here",
+    "    \u251C\u2500\u2500 data_raw         # Raw data files",
+    "        \u251C\u2500\u2500 external         # Data from external sources",
+    "        \u251C\u2500\u2500 field            # Field/lab measurements",
+    "        \u251C\u2500\u2500 literature       # Data compiled from the literature",
+    "        \u2514\u2500\u2500 spatial          # Maps and other spatial files",
+    "    \u251C\u2500\u2500 docs             # Documents summarizing analyses (.html compiled from .Rmd)",
+    "    \u251C\u2500\u2500 output           # Figures (.png) and data (.csv) generated during analyses",
+    "    \u251C\u2500\u2500 R_markdowns      # Code for analyses (.Rmd)",
+    "    \u251C\u2500\u2500 R_scripts        # Scripts containing source code, functions, etc. (.R)",
+    "        \u2514\u2500\u2500 archive          # Unorganized snippets of ill-fated code (view at your own risk)",
+    "    \u2514\u2500\u2500 README.md        # You are here",
     "",
     "-----",
     "",
@@ -49,11 +49,11 @@ eco_analysis <- function(path, ...) {
     )
     writeLines(readme, "README.md", useBytes = TRUE)
     
-    
+  
     ##### CREATE INITIAL R SCRIPT #####
     
     temp_script <- paste(
-      "# Temporary R script for initializing a project",
+      "# Temporary R script to help with project initialization",
       "# DELETE AFTER USE",
       "",
       "# Create license",
