@@ -19,29 +19,30 @@ install_github("katekathrynkat/katereR")
 
 ## RStudio project templates
 
+- `eco_analysis`: General project for ecological data analysis
+
 ### Usage
 
 Open a new project in RStudio: File -> New Project -> New Directory -> katereR
-
-### Templates
-
-- **eco_analysis**: general project for ecological data analysis
 
 <br>
 
 ## R Markdown templates
 
+- `t_simple`: Simple Rmd
+- `t_metadata`: Rmd for describing data
+- `t_analysis`: General Rmd for data analysis
+- `t_index`: Rmd to use as the home page for a project website
+
 ### Usage
 
 Open a new .Rmd file in RStudio: File -> New File -> R Markdown -> From Template -> katereR
 
-### Templates
-
-- **analysis**: general Rmd for data analysis
-
 <br>
 
 ## ggplot themes
+
+- `foundation`: Base theme
 
 ### Usage
 
@@ -52,10 +53,6 @@ p <- ggplot(cars, aes(x = speed, y = dist)) +
             geom_point()
 p + theme_foundation()
 ```
-
-### Themes
-
-- **foundation**: base theme
 
 <br>
 
