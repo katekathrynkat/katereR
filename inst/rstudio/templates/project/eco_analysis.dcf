@@ -7,7 +7,7 @@ OpenFiles: README.md
 Parameter: project_name
 Widget: TextInput
 Label: Project name
-Default: path
+Default: Project name
 Position: left
 
 Parameter: data_external
