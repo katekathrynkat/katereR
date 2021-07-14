@@ -11,8 +11,7 @@ A package with Kate's favorite templates and themes.
 ## Installation
 
 ```
-library(devtools)
-install_github("katekathrynkat/katereR")
+devtools::install_github("katekathrynkat/katereR")
 ```
 
 <br>
