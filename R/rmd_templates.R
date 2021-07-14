@@ -22,16 +22,20 @@ t_analysis <- function(toc = TRUE, code_folding = "hide", df_print = "paged") {
 }
 
 # Index template
-t_index <- function(toc = FALSE, code_folding = "none", df_print = "paged") {
+t_index <- function(rmd_dir = "R_markdowns", # where to save CSS relative to root
+                    toc = FALSE, code_folding = "none", df_print = "paged") {
 
-  # get the locations of resource files located within the package
+  # get the locations of CSS file located within the package
   css <- system.file("rmarkdown", "templates",
                      "index", "style_index.css", package = "katereR")
-
+  
+  # copy to the specified directory (default /R_markdowns)
+  file.copy(css, rmd_dir)
+  
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
                            highlight = "pygments",
-                           css = css,
+                           css = paste0(rmd_dir, "style_index.css"),
                            toc = toc,
                            toc_float = TRUE,
                            toc_depth = 3,
