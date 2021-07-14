@@ -22,27 +22,32 @@ eco_analysis <- function(path, ...) {
   
   readme <- paste(
     paste0("# ", path, ": ", dots[["project_name"]]),
+    "",
     "Description goes here",
     "",
     paste0("View analyses at https://katekathrynkat.github.io/", path),
+    "",
     "## Directory structure",
+    "",
     "    .",
-    "    ├── data_raw		    	# Raw data files",
-    "        ├── external			    # Data from external sources",
-    "        ├── field				    # Field/lab measurements",
-    "        ├── literature			  # Data compiled from the literature",
-    "        └── spatial				  # Maps and other spatial files",
+    "    ├── data_raw         # Raw data files",
+    "        ├── external         # Data from external sources",
+    "        ├── field            # Field/lab measurements",
+    "        ├── literature       # Data compiled from the literature",
+    "        └── spatial          # Maps and other spatial files",
     "    ├── docs             # Documents summarizing analyses (.html compiled from .Rmd)",
-    "    ├── output			    	# Figures (.png) and data (.csv) generated during analyses",
-    "    ├── R_markdowns			# Code for analyses (.Rmd)",
-    "    ├── R_scripts		  	# Scripts containing source code, functions, etc. (.R)",
-    "        └── archive				  # Unorganized snippets of ill-fated code (view at your own risk)",
-    "    └── README.md				# You are here",
+    "    ├── output           # Figures (.png) and data (.csv) generated during analyses",
+    "    ├── R_markdowns      # Code for analyses (.Rmd)",
+    "    ├── R_scripts        # Scripts containing source code, functions, etc. (.R)",
+    "        └── archive          # Unorganized snippets of ill-fated code (view at your own risk)",
+    "    └── README.md        # You are here",
+    "",
     "-----",
+    "",
     "**Contact:** Kate Culhane, kathrynculhane@ucsb.edu",
     sep = '\n'
   )
-    writeLines(readme, "README.md")
+    writeLines(readme, "README.md", useBytes = TRUE)
 
   
   ##### CREATE FILE STRUCTURE #####
@@ -79,16 +84,17 @@ eco_analysis <- function(path, ...) {
     "# Compile .Rmd documents as HTML reports",
     "# Save in folder 'docs'",
     "",
+    "# Index",
+    "rmarkdown::render('code/00_index.Rmd', output_file = '../docs/index.html')",
+    "",
     "# 01 Metadata",
-    "# rmarkdown::render('code/01_metadata.Rmd', output_file = '../docs/01_metadata..html')",
+    "rmarkdown::render('code/01_metadata.Rmd', output_file = '../docs/01_metadata.html')",
     "",
     "# 02 Data wrangling",
-    "# rmarkdown::render('code/02_data_wrangling.Rmd', output_file = '../docs/02_data_wrangling.html')",
+    "rmarkdown::render('code/02_data_wrangling.Rmd', output_file = '../docs/02_data_wrangling.html')",
     "",
     "# 03 First analysis",
-    "",
-    "# rmarkdown::render('code/03_first_analysis.Rmd', output_file = '../docs/03_first_analysis.html')",
-    "",
+    "rmarkdown::render('code/03_first_analysis.Rmd', output_file = '../docs/03_first_analysis.html')",
     sep = "\n"
   )
   writeLines(create_reports, "R_scripts/create_reports.R")
