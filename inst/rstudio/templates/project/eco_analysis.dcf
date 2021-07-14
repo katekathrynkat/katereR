@@ -1,14 +1,8 @@
 Binding: eco_analysis
 Title: katereR: Ecology analysis template
-OpenFiles: README.md
+OpenFiles: README.md, temporary_script.R
 
 
-
-Parameter: project_name
-Widget: TextInput
-Label: Project name
-Default: Project name
-Position: left
 
 Parameter: data_external
 Widget: CheckboxInput
@@ -36,26 +30,14 @@ Position: left
 
 
 
-Parameter: license
-Widget: CheckboxInput
-Label: Add MIT license?
-Default: On
-Position: right
-
-Parameter: github
-Widget: CheckboxInput
-Label: Create GitHub repo?
-Default: On
-Position: right
-
-Parameter: renv
-Widget: CheckboxInput
-Label: Use renv package management?
-Default: On
+Parameter: project_name
+Widget: TextInput
+Label: Project name
+Default: Project name
 Position: right
 
 Parameter: website
 Widget: CheckboxInput
-Label: Create website using GitHub Pages?
+Label: Create files for GitHub Pages?
 Default: On
 Position: right

@@ -15,11 +15,11 @@ eco_analysis <- function(path, ...) {
   
   ##### COLLECT INPUTS #####
 
-    dots <- list(...)
+  dots <- list(...)
   
   
   ##### CREATE README #####
-  
+
   readme <- paste(
     paste0("# ", path, ": ", dots[["project_name"]]),
     "",
@@ -46,10 +46,30 @@ eco_analysis <- function(path, ...) {
     "",
     "**Contact:** Kate Culhane, kathrynculhane@ucsb.edu",
     sep = '\n'
-  )
+    )
     writeLines(readme, "README.md", useBytes = TRUE)
-
-  
+    
+    
+    ##### CREATE INITIAL R SCRIPT #####
+    
+    temp_script <- paste(
+      "# Temporary R script for initializing a project",
+      "# DELETE AFTER USE",
+      "",
+      "# Create license",
+      "usethis::use_mit_license('Kathryn Culhane')",
+      "",
+      "# Initialize renv",
+      "renv::init()",
+      "",
+      "# Start git repo",
+      "usethis::use_git(message = 'initial commit')",
+      "usethis::use_github(protocol = 'https')",
+      sep = '\n'
+    )
+    writeLines(temp_script, "temporary_script.R")
+    
+    
   ##### CREATE FILE STRUCTURE #####
   
   # create base folders
@@ -98,20 +118,7 @@ eco_analysis <- function(path, ...) {
     sep = "\n"
   )
   writeLines(create_reports, "R_scripts/create_reports.R")
-  
-  
-  ##### CREATE LICENSE #####
-  
-  if (dots[["license"]]) {
-    usethis::use_mit_license("Kathryn Culhane")
-  }
-  
-  
-  ##### USE RENV #####
-  if (dots[["renv"]]) {
-    renv::init()
-  }
-  
+
   
   ##### CREATE FILES FOR WEBSITE #####
   
@@ -149,12 +156,5 @@ eco_analysis <- function(path, ...) {
     # create .nojekyll file
     file.create("docs/.nojekyll")
   }
-  
-  ##### CREATE GIT REPO #####
-  
-  if (dots[["github"]]) {
-    usethis::use_git(message = "initial commit")
-    usethis::use_github(protocol = "https")
-  }
-  
+ 
 }
