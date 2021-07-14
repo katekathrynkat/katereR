@@ -1,8 +1,8 @@
 ---
-title: "Template - analysis"
-subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
+title: "Template - simple"
+subtitle: "Subtitle"
 output:
-  katereR::t_analysis
+  katereR::t_simple
 ---
 
 **Kate Culhane**, Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara  
@@ -30,30 +30,6 @@ Brief summary goes here
 
 ***
 
-#### Dependencies
-
-```{r packages and data, class.source = 'fold-show'}
-
-##### PACKAGES #####
-
-# library(tidyverse) # data manipulation & visualization
-# library(katereR) # my favorite ggplot themes
-
-##### SOURCE CODE #####
-
-# source('R_scripts/FILE_NAME.R')
-
-##### DATA #####
-
-# Brief description
-# read_csv()
-
-```
-
-#### Output files
-
-- **file_name.ext**: Brief description
-
 ## Important things
 
 <div class = "important">
@@ -79,12 +55,3 @@ Summary
 - [Webpage](link), author
 
 <br>
-<br>
-<br>
-
-<details><summary>**Session info**</summary>
-```{r code}
-devtools::session_info()
-```
-</details>
-

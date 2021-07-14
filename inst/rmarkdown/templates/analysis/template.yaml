@@ -1,4 +1,4 @@
-name: analysis
+name: Analysis
 description: >
    Template for statistical analysis.
 create_dir: FALSE

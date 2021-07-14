@@ -1,9 +1,13 @@
 /* Spacing for headers */
 h1.title {
+  margin: 0px;
+  font-size: 0px;
+}
+h1, .h1 {
   margin-top: 10px;
   font-weight: bold;
 }
-h3.subtitle {
+h5, .h5 {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1.2em;

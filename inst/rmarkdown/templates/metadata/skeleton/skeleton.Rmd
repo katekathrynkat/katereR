@@ -1,5 +1,5 @@
 ---
-title: "Template - analysis"
+title: "Template - metadata"
 subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
 output:
   katereR::t_analysis
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE, results = 'hold',
 
 **Summary**
 
-Brief summary goes here
+Descriptions of the raw datasets used in further analyses. Datasets are located in the directory "data-raw".
 
 </div>
 
@@ -36,12 +36,8 @@ Brief summary goes here
 
 ##### PACKAGES #####
 
+# library(DT) # interactive data tables
 # library(tidyverse) # data manipulation & visualization
-# library(katereR) # my favorite ggplot themes
-
-##### SOURCE CODE #####
-
-# source('R_scripts/FILE_NAME.R')
 
 ##### DATA #####
 
@@ -50,9 +46,27 @@ Brief summary goes here
 
 ```
 
-#### Output files
+## External data
 
-- **file_name.ext**: Brief description
+### Dataset 1
+
+Brief description of data
+
+**Variables**
+
+- `variable_name`: definition
+
+```{r}
+
+iris
+
+```
+
+## Field/lab data
+
+## Literature data
+
+## Spatial data
 
 ## Important things
 
@@ -63,16 +77,6 @@ Something important
 </div>
 
 > Note about something to check later
-
-## Tabbed section {.tabset .tabset-fade .tabset-pills}
-
-Summary
-
-### Tab 1
-
-### Tab 2
-
-### Tab 3
 
 ## Notes & resources
 
