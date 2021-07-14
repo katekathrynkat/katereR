@@ -1,7 +1,8 @@
 ---
 title: "Project Title"
 output:
-  katereR::t_index
+  katereR::t_index:
+    rmd_dir: "R_markdowns"
 ---
 
 ```{r setup, include=FALSE}
