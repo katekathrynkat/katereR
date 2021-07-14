@@ -26,7 +26,7 @@ t_index <- function(toc = FALSE, code_folding = "none", df_print = "paged") {
 
   # get the locations of resource files located within the package
   css <- system.file("rmarkdown", "templates", "index",
-                     "resources", "style.css", package = "katereR")
+                     "skeleton", "style.css", package = "katereR")
 
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
