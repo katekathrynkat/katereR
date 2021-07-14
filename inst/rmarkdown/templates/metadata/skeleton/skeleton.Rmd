@@ -2,7 +2,7 @@
 title: "Template - metadata"
 subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
 output:
-  katereR::t_analysis
+  katereR::t_metadata
 ---
 
 **Kate Culhane**, Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara  

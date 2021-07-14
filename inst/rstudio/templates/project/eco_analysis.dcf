@@ -32,12 +32,12 @@ Position: left
 
 Parameter: project_name
 Widget: TextInput
-Label: Project name
-Default: Project name
+Label: Full project name
+Default: Project
 Position: right
 
 Parameter: website
 Widget: CheckboxInput
-Label: Create files for GitHub Pages?
+Label: Create _site.yml for GitHub Pages?
 Default: On
 Position: right

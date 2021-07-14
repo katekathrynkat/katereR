@@ -40,6 +40,7 @@ eco_analysis <- function(path, ...) {
     "    \u251C\u2500\u2500 R_markdowns      # Code for analyses (.Rmd)",
     "    \u251C\u2500\u2500 R_scripts        # Scripts containing source code, functions, etc. (.R)",
     "        \u2514\u2500\u2500 archive          # Unorganized snippets of ill-fated code (view at your own risk)",
+    "    \u251C\u2500\u2500 renv             # Package management with renv",
     "    \u2514\u2500\u2500 README.md        # You are here",
     "",
     "-----",
@@ -65,6 +66,10 @@ eco_analysis <- function(path, ...) {
       "# Start git repo",
       "usethis::use_git(message = 'initial commit')",
       "usethis::use_github(protocol = 'https')",
+      "",
+      "# Install necessary packages to renv environment",
+      "install.packages('devtools')",
+      "devtools::install_github('katekathrynkat/katereR')",
       sep = '\n'
     )
     writeLines(temp_script, "temporary_script.R")
@@ -79,7 +84,6 @@ eco_analysis <- function(path, ...) {
   dir.create("R_markdowns", recursive = TRUE, showWarnings = FALSE)
   dir.create("R_scripts", recursive = TRUE, showWarnings = FALSE)
   dir.create("R_scripts/archive", recursive = TRUE, showWarnings = FALSE)
-  dir.create("reports", recursive = TRUE, showWarnings = FALSE)
   
   # create data folders
   if (dots[["data_external"]]) {
@@ -95,32 +99,32 @@ eco_analysis <- function(path, ...) {
     dir.create("data_raw/spatial", recursive = TRUE, showWarnings = FALSE)
   }
   
-  # create create_reports.R
-  create_reports <- paste(
-    "##################################",
-    "#####     Create reports     #####",
-    "##################################",
+  # create create_docs.R
+  create_docs <- paste(
+    "###############################",
+    "#####     Create docs     #####",
+    "###############################",
     "",
     "# Compile .Rmd documents as HTML reports",
     "# Save in folder 'docs'",
     "",
     "# Index",
-    "rmarkdown::render('code/00_index.Rmd', output_file = '../docs/index.html')",
+    "rmarkdown::render('R_markdowns/index.Rmd', output_file = '../docs/index.html')",
     "",
     "# 01 Metadata",
-    "rmarkdown::render('code/01_metadata.Rmd', output_file = '../docs/01_metadata.html')",
+    "rmarkdown::render('R_markdowns/01_metadata.Rmd', output_file = '../docs/01_metadata.html')",
     "",
     "# 02 Data wrangling",
-    "rmarkdown::render('code/02_data_wrangling.Rmd', output_file = '../docs/02_data_wrangling.html')",
+    "rmarkdown::render('R_markdowns/02_data_wrangling.Rmd', output_file = '../docs/02_data_wrangling.html')",
     "",
     "# 03 First analysis",
-    "rmarkdown::render('code/03_first_analysis.Rmd', output_file = '../docs/03_first_analysis.html')",
+    "rmarkdown::render('R_markdowns/03_first_analysis.Rmd', output_file = '../docs/03_first_analysis.html')",
     sep = "\n"
   )
-  writeLines(create_reports, "R_scripts/create_reports.R")
+  writeLines(create_docs, "R_scripts/create_docs.R")
 
   
-  ##### CREATE FILES FOR WEBSITE #####
+  ##### CREATE _site.yml FOR WEBSITE #####
   
   if (dots[["website"]]) {
     
@@ -132,29 +136,25 @@ eco_analysis <- function(path, ...) {
       '  left:',
       '    - text: "Home"',
       '      icon: fa-home',
-      '      href: home.html',
+      '      href: index.html',
       '    - text: "Data"',
       '      icon: table',
       '      menu:',
       '        - text: "Metadata"',
-      '          href: 01_metadata.html',
+      '          href: "01_metadata.html"',
       '        - text: "Data wrangling"',
-      '          href: 02_data_wrangling.html',
+      '          href: "02_data_wrangling.html"',
       '    - text: "Analyses"',
       '      icon: chart-line',
       '      menu:',
       '        - text: "First analysis"',
-      '          href: 03_first_analysis.html',
+      '          href: "03_first_analysis.html"',
       '  right:',
       '    - icon: fa-github',
       paste0('    - href: https://github.com/katekathrynkat/', path),
-      'output_dir: "docs"',
       sep = "\n"
     )
     writeLines(site_yml, "docs/_site.yml")
-    
-    # create .nojekyll file
-    file.create("docs/.nojekyll")
   }
  
 }

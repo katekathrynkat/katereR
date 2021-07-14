@@ -1,5 +1,5 @@
 ---
-title: "."
+title: "Project Title"
 output:
   katereR::t_index
 ---
