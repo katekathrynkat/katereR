@@ -1,5 +1,5 @@
 ---
-title: "katereR Templates"
+title: "katereR templates"
 output:
   katereR::t_index
 ---
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, results = 'hold',
 
 <div class = "summary">
 
-# katereR R Markdown templates
+# katereR: R Markdown templates
 
 ##### Kate's favorite templates for .Rmd documents.
 

@@ -1,7 +1,7 @@
-name: "katereR Templates"
+name: "katereR templates"
 output_dir: "../docs"
 navbar:
-  title: "katereR Templates"
+  title: "katereR templates"
   left:
   - text: "Home"
     href: "index.html"
