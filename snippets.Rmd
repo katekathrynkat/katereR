@@ -1,0 +1,104 @@
+---
+title: "code snippets"
+author: "me"
+date: "7/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Resources
+
+[From Data to Viz](https://www.data-to-viz.com/), Yan Holtz
+
+[Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/), Yan Holtz
+
+[Themes to Improve Your ggplot Figures](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/), R for the Rest of Us blog, David Keyes
+
+[How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/), R for the Rest of Us blog, David Keyes
+
+[rstudio4edu: A Handbook for Teaching and Learning with R and RStudio](https://rstudio4edu.github.io/rstudio4edu-book/index.html), Desirée De Leon & Alison Hill
+
+[Teacups, Giraffes, and Statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html), Hasse Wallum & Desirée de Leon
+
+[R Markdown Websites](https://garrettgman.github.io/rmarkdown/rmarkdown_websites.html#publishing_websites), R Markdown
+
+[R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.221160731.224025766.1626132262-1549852343.1624994248), R Markdown
+
+[Bootswatch themes](https://bootswatch.com/3/), Bootswatch
+
+## Tables
+
+For publication
+
+```{r}
+
+library(flextable)
+
+```
+
+For data viewing
+
+```{r}
+
+library(DT)
+datatable(mtcars, rownames = FALSE, filter="top", options = list(pageLength = 5, scrollX=T) )
+
+```
+
+Figure aesthetics 
+
+```{r}
+
+##########################################
+##### SOURCE CODE: Figure aesthetics #####
+##########################################
+
+# Code for figure aesthetics:
+# Creating color palette/label vectors
+# Setting the ggplot theme
+
+# Packages
+library(ggplot2)
+library(dplyr)
+library(calecopal)
+
+### THINGS TO ADD: sessionInfo(), package for package version info?
+
+
+##### Color palette vectors #####
+
+# Color palette for PURPOSE
+v_cols <- c('#COLOR', '#COLOR', '#COLOR')
+names(v_cols) <- c('VARIABLE', 'VARIABLE', 'VARIABLE')
+
+
+
+##### Label vectors #####
+
+# Labels for PURPOSE
+v_labs <- c('LABEL', 'LABEL', 'LABEL')
+names(v_labs) <- c('VARIABLE', 'VARIABLE', 'VARIABLE')
+
+
+
+##### ggplot themes #####
+
+# `theme_set` replaces the default
+# `theme_update` adds new elements to the default theme (analogous to `+`)
+# `theme_replace` replaces elements of the default theme
+
+
+# Scatter plot
+theme_scatter <- theme_classic()
+theme_set(theme_scatter)
+theme_update()
+
+
+ggplot(cars, aes(x = speed, y = dist)) + geom_point()
+
+```
+

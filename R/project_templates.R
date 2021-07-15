@@ -43,8 +43,8 @@ eco_analysis <- function(path, ...) {
     "        \u2514\u2500\u2500 archive          # Unorganized snippets of ill-fated code (view at your own risk)",
     "    \u251C\u2500\u2500 renv             # Package management with renv",
     
+    "    \u251C\u2500\u2500 reports          # Standalone HTML reports (rendered from R_markdowns)",
     "    \u2514\u2500\u2500 README.md        # You are here",
-    "    \u251C\u2500\u2500 docs             # Standalone HTML reports (rendered from R_markdowns)",
     "-----",
     "",
     "**Contact:** Kate Culhane, kathrynculhane@ucsb.edu",
