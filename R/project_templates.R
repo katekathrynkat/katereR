@@ -156,7 +156,7 @@ eco_analysis <- function(path, ...) {
       '    href: index.html',
       '    icon: fa-home',
       '  - text: "Data"',
-      '    href: "01_metadata_html"',
+      '    href: "01_metadata.html"',
       '    icon: fa-table',
       '  - text: "Analyses"',
       '    menu:',
