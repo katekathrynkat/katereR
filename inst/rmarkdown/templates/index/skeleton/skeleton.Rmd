@@ -42,6 +42,6 @@ knitr::opts_chunk$set(echo = TRUE, results = 'hold',
 
 - **PhD advisor:** [Hillary Young](https://young-lab.eemb.ucsb.edu/), Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara
 
-### [<i class="fa fa-github fa-fw"></i> View project on GitHub](https://github.com/katekathrynkat/PROJECT_PATH)
+### [<i class="fa fa-github fa-fw"></i> View source code on GitHub](https://github.com/katekathrynkat/PROJECT_PATH)
 
 <br>

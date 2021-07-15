@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE, results = 'hold',
 
 **Summary**
 
-Descriptions of the raw datasets used in further analyses. Datasets are located in the directory "data-raw".
+Descriptions of raw datasets used in further analyses. Datasets are located in the project directory `data-raw`.
 
 </div>
 

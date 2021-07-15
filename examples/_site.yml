@@ -1,0 +1,22 @@
+name: "katereR Templates"
+output_dir: "../docs"
+navbar:
+  title: "katereR Templates"
+  left:
+  - text: "Home"
+    href: "index.html"
+    icon: "fa-home"
+  - text: "Templates"
+    menu:
+    - text: "Simple"
+      href: "t_simple.html"
+    - text: "Index"
+      href: "t_index.html"
+    - text: "Metadata"
+      href: "t_metadata.html"
+    - text: "Analysis"
+      href: "t_analysis.html"
+    icon: "fa-copy"
+  right:
+  - href: "https://github.com/katekathrynkat/katereR/"
+    icon: "fa-github"
