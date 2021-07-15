@@ -2,16 +2,20 @@ library(rmarkdown)
 library(htmltools)
 
 # Analysis template
-t_analysis <- function(toc = TRUE, code_folding = "hide", df_print = "paged") {
+t_analysis <- function(rmd_dir = "R_markdowns", # where to save CSS relative to root
+                       toc = TRUE, code_folding = "hide", df_print = "paged") {
 
-  # get the locations of resource files located within the package
-  css <- system.file("rmarkdown", "templates", "analysis",
-                     "resources", "style.css", package = "katereR")
+  # get the locations of CSS file located within the package
+  css <- system.file("rmarkdown", "templates",
+                     "CSS", "style_base.css", package = "katereR")
+  
+  # copy to the specified directory (default /R_markdowns)
+  file.copy(css, basename(css), overwrite = FALSE)
 
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
                            highlight = "pygments",
-                           css = css,
+                           css = basename(css),
                            toc = toc,
                            toc_float = TRUE,
                            toc_depth = 3,
@@ -27,16 +31,15 @@ t_index <- function(rmd_dir = "R_markdowns", # where to save CSS relative to roo
 
   # get the locations of CSS file located within the package
   css <- system.file("rmarkdown", "templates",
-                     "index", "style_index.css", package = "katereR")
+                     "CSS", "style_index.css", package = "katereR")
   
   # copy to the specified directory (default /R_markdowns)
-  file.copy(css, paste0(getwd(), "/", rmd_dir, "/", basename(css)),
-            overwrite = FALSE)
+  file.copy(css, basename(css), overwrite = FALSE)
   
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
                            highlight = "pygments",
-                           css = paste0(getwd(), "/", rmd_dir, "/", basename(css)),
+                           css = basename(css),
                            toc = toc,
                            toc_float = TRUE,
                            toc_depth = 3,
@@ -47,16 +50,20 @@ t_index <- function(rmd_dir = "R_markdowns", # where to save CSS relative to roo
 }
 
 # Metadata template
-t_metadata <- function(toc = TRUE, code_folding = "hide", df_print = "paged") {
+t_metadata <- function(rmd_dir = "R_markdowns", # where to save CSS relative to root
+                       toc = TRUE, code_folding = "hide", df_print = "paged") {
 
-  # get the locations of resource files located within the package
-  css <- system.file("rmarkdown", "templates", "metadata",
-                     "resources", "style.css", package = "katereR")
+  # get the locations of CSS file located within the package
+  css <- system.file("rmarkdown", "templates",
+                     "CSS", "style_base.css", package = "katereR")
+  
+  # copy to the specified directory (default /R_markdowns)
+  file.copy(css, basename(css), overwrite = FALSE)
 
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
                            highlight = "pygments",
-                           css = css,
+                           css = basename(css),
                            toc = toc,
                            toc_float = TRUE,
                            toc_depth = 3,
@@ -67,16 +74,20 @@ t_metadata <- function(toc = TRUE, code_folding = "hide", df_print = "paged") {
 }
 
 # Simple template
-t_simple <- function(toc = FALSE, code_folding = "none", df_print = "paged") {
+t_simple <- function(rmd_dir = "R_markdowns", # where to save CSS relative to root
+                     toc = FALSE, code_folding = "none", df_print = "paged") {
 
-  # get the locations of resource files located within the package
-  css <- system.file("rmarkdown", "templates", "simple",
-                     "resources", "style.css", package = "katereR")
+  # get the locations of CSS file located within the package
+  css <- system.file("rmarkdown", "templates",
+                     "CSS", "style_base.css", package = "katereR")
+  
+  # copy to the specified directory (default /R_markdowns)
+  file.copy(css, basename(css), overwrite = FALSE)
 
   # call the base html_document function
   rmarkdown::html_document(theme = "flatly",
                            highlight = "pygments",
-                           css = css,
+                           css = basename(css),
                            toc = toc,
                            toc_float = TRUE,
                            toc_depth = 3,
