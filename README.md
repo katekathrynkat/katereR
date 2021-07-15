@@ -1,6 +1,6 @@
 # katereR
 
-A package with Kate's favorite templates and themes.
+A package catering to Kate's workflow.
 
 - [RStudio project templates](#rstudio-project-templates)
 - [R Markdown templates](#r-markdown-templates)
@@ -27,6 +27,8 @@ Open a new project in RStudio: File -> New Project -> New Directory -> katereR
 <br>
 
 ## R Markdown templates
+
+View examples at https://katekathrynkat.github.io/katereR/
 
 - `t_simple`: Simple Rmd
 - `t_metadata`: Rmd for describing data
