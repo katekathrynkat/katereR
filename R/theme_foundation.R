@@ -1,3 +1,6 @@
+############################################
+#####     ggplot theme: foundation     #####
+############################################
 #' Foundation Theme
 #'
 #' This theme is designed to be a foundation from which to build new

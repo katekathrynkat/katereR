@@ -1,4 +1,5 @@
-/* Spacing for headers */
+/* Header formatting */
+
 h1.title {
   margin-top: 10px;
   font-weight: bold;
@@ -9,18 +10,24 @@ h3.subtitle {
   font-size: 1.2em;
 }
 h2, .h2 {
-  margin-top: 80px;
   border-bottom: solid;
   padding: 4px;
 }
-h3, .h3 {
-    margin-top: 50px;
+
+/* Section div margins */
+
+div.level2 {
+  margin-top: 80px;
 }
-h4, .h4 {
-    margin-top: 30px;
+div.level3 {
+  margin-top: 50px;
+}
+div.level4 {
+  margin-top: 30px;
 }
 
 /* Div formatting */
+
 div.summary {
   background-color:#DAF5F0;
   border-radius: 10px;
@@ -39,6 +46,7 @@ div.important {
 }
 
 /* Block quote formatting */
+
 blockquote {
   border-left-color: #D94800;
   border-left-width: 10px;
@@ -49,6 +57,7 @@ blockquote {
 }
 
 /* Fontawesome icon style */
+
 .fa {
   margin-left: 5px;
   margin-right: 5px;

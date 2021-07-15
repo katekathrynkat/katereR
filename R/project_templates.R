@@ -1,5 +1,6 @@
-library(usethis)
-library(renv)
+#############################################
+#####     RStudio project templates     #####
+#############################################
 
 # R Studio project template: Ecological analysis
 eco_analysis <- function(path, ...) {

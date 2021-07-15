@@ -1,0 +1,47 @@
+---
+title: "Project Title"
+output:
+  katereR::t_index
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_knit$set(root.dir = '..')
+knitr::opts_chunk$set(echo = TRUE, results = 'hold',
+                      warning = FALSE, message = FALSE,
+                      fig.width=5, fig.height=3, rows.print=5)
+```
+
+***
+
+<div class = "summary">
+
+# Project title
+
+##### Brief description
+
+**Kate Culhane**, Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara  
+[kathrynculhane@ucsb.edu](kathrynculhane@ucsb.edu)
+[<i class="fa fa-github"></i>](https://github.com/katekathrynkat/)
+[<i class="fa fa-twitter"></i>](https://twitter.com/katekathrynkat/)
+
+</div>
+
+***
+
+### <i class="fa fa-table fa-fw"></i> Data
+
+- [Metadata]()
+- [Data wrangling]()
+
+### <i class="fa fa-chart-line fa-fw"></i> Analyses
+
+- [First analysis]()
+
+### <i class="fa fa-users fa-fw"></i> Collaborators
+
+- **PhD advisor:** [Hillary Young](https://young-lab.eemb.ucsb.edu/), Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara
+
+### [<i class="fa fa-github fa-fw"></i> View project on GitHub](https://github.com/katekathrynkat/PROJECT_PATH)
+
+<br>

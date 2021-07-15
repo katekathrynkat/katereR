@@ -1,3 +1,6 @@
+######################################
+#####     ggplot theme: test     #####
+######################################
 #' @title Clean ggplot theme
 #'
 #' @description Clean ggplot theme with no panel background, black axis lines
