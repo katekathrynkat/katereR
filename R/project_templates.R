@@ -45,6 +45,7 @@ eco_analysis <- function(path, ...) {
     
     "    \u251C\u2500\u2500 reports          # Standalone HTML reports (rendered from R_markdowns)",
     "    \u2514\u2500\u2500 README.md        # You are here",
+    "",
     "-----",
     "",
     "**Contact:** Kate Culhane, kathrynculhane@ucsb.edu",
