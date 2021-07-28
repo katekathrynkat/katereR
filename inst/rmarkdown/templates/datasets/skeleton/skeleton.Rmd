@@ -42,7 +42,8 @@ Description and wrangling of datasets. Raw data are located in the project direc
     ├── literature                   # Data compiled from the literature
     └── spatial                      # Maps and other spatial files
 
-        
+<br>
+
 **DEPENDENCIES**
 
 ```{r dependencies, class.source='fold-show'}
@@ -56,6 +57,8 @@ Description and wrangling of datasets. Raw data are located in the project direc
 # read_csv()
 
 ```
+
+<br>
 
 **OUTPUT FILES**
 

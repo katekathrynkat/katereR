@@ -28,7 +28,7 @@ knitr::opts_knit$set(root.dir='..')
 
 ### <i class="fa fa-table fa-fw"></i> Data
 
-- [Datasets and data wrangling](https://katekathrynkat.github.io/PROJECT/00_datasets.html)
+- [Metadata and data wrangling](https://katekathrynkat.github.io/PROJECT/00_datasets.html)
 
 ### <i class="fa fa-chart-line fa-fw"></i> Analyses
 

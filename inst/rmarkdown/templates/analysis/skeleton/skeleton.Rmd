@@ -49,6 +49,8 @@ Brief summary goes here
 
 ```
 
+<br>
+
 **OUTPUT FILES**
 
 - **file_name.ext**: Brief description
