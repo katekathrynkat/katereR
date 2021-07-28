@@ -43,6 +43,4 @@ knitr::opts_knit$set(root.dir='..')
 
 - **PhD advisor:** [Hillary Young](https://young-lab.eemb.ucsb.edu/), Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara
 
-### [<i class="fa fa-github fa-fw"></i> View source code on GitHub](https://github.com/katekathrynkat/PROJECT_PATH)
-
-<br>
+### [<i class="fa fa-github fa-fw"></i>](https://github.com/katekathrynkat/PROJECT_PATH) View source code on [GitHub](https://github.com/katekathrynkat/PROJECT_PATH)

@@ -77,5 +77,3 @@ iris
 ## Literature data
 
 ## Spatial data
-
-<br>

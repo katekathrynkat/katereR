@@ -52,5 +52,3 @@ Summary
 ## Notes & resources
 
 - [Webpage](link), author
-
-<br>
