@@ -1,0 +1,26 @@
+---
+title: "Notes"
+output:
+  katereR::t_notes
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_knit$set(root.dir='..')
+```
+
+## Important things
+
+<div class = "important">
+
+Something important
+
+</div>
+
+> Note about something to check later
+
+## Notes & resources
+
+- [Webpage](link), author
+
+<br>
