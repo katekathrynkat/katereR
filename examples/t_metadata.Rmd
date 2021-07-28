@@ -1,5 +1,5 @@
 ---
-title: "Template - metadata"
+title: "Metadata"
 subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
 output:
   katereR::t_metadata
@@ -14,39 +14,51 @@ output:
 
 ```{r setup, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
-knitr::opts_knit$set(root.dir = '..')
-knitr::opts_chunk$set(echo = TRUE, results = 'hold',
-                      warning = FALSE, message = FALSE,
-                      fig.width=5, fig.height=3, rows.print=5)
+knitr::opts_knit$set(root.dir='..')
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, rows.print=5)
 ```
 
 <div class = "summary">
 
-**Summary**
+**SUMMARY**
 
-Descriptions of raw datasets used in further analyses. Datasets are located in the project directory `data-raw`.
+Descriptions of raw datasets used in further analyses. Datasets are located in the project directory [`data_raw`](https://github.com/katekathrynkat/PROJECT/tree/master/data_raw/).
 
 </div>
 
 ***
 
-#### Dependencies
+**FILE STRUCTURE**
 
-```{r packages and data, class.source = 'fold-show'}
+    data_raw
+    ├── external                     # Data from external sources
+    ├── field                        # Field/lab measurements
+        ├── original_spreadsheets        # Original data (no cleaning/proofing)
+            ├── [...].xlxs                  # Original Excel files
+            └── data_errata.txt             # Log of corrections made to .csv files
+        ├── data_file_1.csv          # 
+        └── data_file_2.csv          # 
+    ├── literature                   # Data compiled from the literature
+    └── spatial                      # Maps and other spatial files
+
+        
+**DEPENDENCIES**
+
+```{r dependencies, class.source='fold-show'}
 
 ##### PACKAGES #####
 
-# library(DT) # interactive data tables
 # library(tidyverse) # data manipulation & visualization
 
 ##### DATA #####
 
-# Brief description
 # read_csv()
 
 ```
 
 ## External data
+
+## Field/lab data
 
 ### Dataset 1
 
@@ -62,33 +74,6 @@ iris
 
 ```
 
-## Field/lab data
-
 ## Literature data
 
 ## Spatial data
-
-## Important things
-
-<div class = "important">
-
-Something important
-
-</div>
-
-> Note about something to check later
-
-## Notes & resources
-
-- [Webpage](link), author
-
-<br>
-<br>
-<br>
-
-<details><summary>**Session info**</summary>
-```{r code}
-devtools::session_info()
-```
-</details>
-

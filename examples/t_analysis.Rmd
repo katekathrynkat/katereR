@@ -1,5 +1,5 @@
 ---
-title: "Template - analysis"
+title: "Analysis"
 subtitle: "From [PROJECT](https://github.com/katekathrynkat/PROJECT)"
 output:
   katereR::t_analysis
@@ -14,15 +14,14 @@ output:
 
 ```{r setup, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
-knitr::opts_knit$set(root.dir = '..')
-knitr::opts_chunk$set(echo = TRUE, results = 'hold',
-                      warning = FALSE, message = FALSE,
+knitr::opts_knit$set(root.dir='..')
+knitr::opts_chunk$set(echo=TRUE, results='hold', warning=FALSE, message=FALSE,
                       fig.width=5, fig.height=3, rows.print=5)
 ```
 
 <div class = "summary">
 
-**Summary**
+**SUMMARY**
 
 Brief summary goes here
 
@@ -30,9 +29,9 @@ Brief summary goes here
 
 ***
 
-#### Dependencies
+**DEPENDENCIES**
 
-```{r packages and data, class.source = 'fold-show'}
+```{r dependencies, class.source='fold-show'}
 
 ##### PACKAGES #####
 
@@ -50,7 +49,7 @@ Brief summary goes here
 
 ```
 
-#### Output files
+**OUTPUT FILES**
 
 - **file_name.ext**: Brief description
 
@@ -83,8 +82,7 @@ Summary
 <br>
 
 <details><summary>**Session info**</summary>
-```{r code}
+```{r session-info}
 devtools::session_info()
 ```
 </details>
-

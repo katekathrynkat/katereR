@@ -30,10 +30,11 @@ Open a new project in RStudio: File -> New Project -> New Directory -> katereR
 
 View examples at https://katekathrynkat.github.io/katereR/
 
-- `t_simple`: Simple Rmd
-- `t_metadata`: Rmd for describing data
 - `t_analysis`: General Rmd for data analysis
 - `t_index`: Rmd to use as the home page for a project website
+- `t_metadata`: Rmd for describing data
+- `t_notes`: Rmd for notes
+- `t_simple`: Simple Rmd
 
 ### Usage
 

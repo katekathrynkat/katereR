@@ -6,10 +6,7 @@ output:
 
 ```{r setup, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
-knitr::opts_knit$set(root.dir = '..')
-knitr::opts_chunk$set(echo = TRUE, results = 'hold',
-                      warning = FALSE, message = FALSE,
-                      fig.width=5, fig.height=3, rows.print=5)
+knitr::opts_knit$set(root.dir='..')
 ```
 
 ***
@@ -31,17 +28,19 @@ knitr::opts_chunk$set(echo = TRUE, results = 'hold',
 
 ### <i class="fa fa-table fa-fw"></i> Data
 
-- [Metadata]()
-- [Data wrangling]()
+- [Metadata](https://katekathrynkat.github.io/PROJECT/01_metadata.html)
+- [Data wrangling](https://katekathrynkat.github.io/PROJECT/02_data_wrangling.html)
 
 ### <i class="fa fa-chart-line fa-fw"></i> Analyses
 
-- [First analysis]()
+- [Data exploration](https://katekathrynkat.github.io/PROJECT/03_data_exploration.html)
+
+### <i class="fa fa-sticky-note fa-fw"></i> Notes
+
+- [Notes](https://katekathrynkat.github.io/PROJECT/99_notes.html)
 
 ### <i class="fa fa-users fa-fw"></i> Collaborators
 
 - **PhD advisor:** [Hillary Young](https://young-lab.eemb.ucsb.edu/), Dept. of Ecology, Evolution, and Marine Biology, UC Santa Barbara
 
-### [<i class="fa fa-github fa-fw"></i> View source code on GitHub](https://github.com/katekathrynkat/PROJECT_PATH)
-
-<br>
+### [<i class="fa fa-github fa-fw"></i>](https://github.com/katekathrynkat/PROJECT_PATH) View source code on [GitHub](https://github.com/katekathrynkat/PROJECT_PATH)
