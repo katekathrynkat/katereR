@@ -1,0 +1,4 @@
+name: Datasets
+description: >
+   Template for metadata and data wrangling.
+create_dir: FALSE

@@ -47,7 +47,7 @@ t_index <- function(toc = FALSE, code_folding = "none", df_print = "paged") {
 }
 
 # Metadata template
-t_metadata <- function(toc = TRUE, code_folding = "hide", df_print = "paged") {
+t_datasets <- function(toc = TRUE, code_folding = "hide", df_print = "paged") {
 
   # get the locations of CSS file located within the package
   css <- system.file("rmarkdown", "templates",

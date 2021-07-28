@@ -81,7 +81,9 @@ Summary
 <br>
 <br>
 
-<details><summary>**Session info**</summary>
+***
+
+<details><summary>**SESSION INFO**</summary>
 ```{r session-info}
 devtools::session_info()
 ```

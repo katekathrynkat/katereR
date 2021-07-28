@@ -13,6 +13,6 @@ library(rmarkdown)
 render_report <- function(site_yaml = "R_markdowns/_site.yml",
                           input, ...) {
   file.rename(site_yaml, "_site.yml")
-  rmarkdown::render(input, ...)
+  try(rmarkdown::render(input, ...))
   file.rename("_site.yml", site_yaml)
 }

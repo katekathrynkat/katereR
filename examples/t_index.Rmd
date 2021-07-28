@@ -28,16 +28,15 @@ knitr::opts_knit$set(root.dir='..')
 
 ### <i class="fa fa-table fa-fw"></i> Data
 
-- [Metadata](https://katekathrynkat.github.io/PROJECT/01_metadata.html)
-- [Data wrangling](https://katekathrynkat.github.io/PROJECT/02_data_wrangling.html)
+- [Datasets and data wrangling](https://katekathrynkat.github.io/PROJECT/00_datasets.html)
 
 ### <i class="fa fa-chart-line fa-fw"></i> Analyses
 
-- [Data exploration](https://katekathrynkat.github.io/PROJECT/03_data_exploration.html)
+- [Data exploration](https://katekathrynkat.github.io/PROJECT/01_data_exploration.html)
 
 ### <i class="fa fa-sticky-note fa-fw"></i> Notes
 
-- [Notes](https://katekathrynkat.github.io/PROJECT/99_notes.html)
+- [General notes](https://katekathrynkat.github.io/PROJECT/99_notes.html)
 
 ### <i class="fa fa-users fa-fw"></i> Collaborators
 

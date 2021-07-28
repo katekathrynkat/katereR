@@ -29,8 +29,8 @@ knitr::opts_knit$set(root.dir='..')
 ### <i class="fa fa-copy fa-fw"></i> R Markdown templates
 
 - [Analysis](https://katekathrynkat.github.io/katereR/t_analysis.html)
+- [Datasets](https://katekathrynkat.github.io/katereR/t_datasets.html)
 - [Index](https://katekathrynkat.github.io/katereR/t_index.html)
-- [Metadata](https://katekathrynkat.github.io/katereR/t_metadata.html)
 - [Notes](https://katekathrynkat.github.io/katereR/t_notes.html)
 - [Simple](https://katekathrynkat.github.io/katereR/t_simple.html)
 

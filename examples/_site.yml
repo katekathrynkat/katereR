@@ -10,10 +10,10 @@ navbar:
     menu:
     - text: "Analysis"
       href: "t_analysis.html"
+    - text: "Datasets"
+      href: "t_datasets.html"
     - text: "Index"
       href: "t_index.html"
-    - text: "Metadata"
-      href: "t_metadata.html"
     - text: "notes"
       href: "t_notes.html"
     - text: "Simple"
