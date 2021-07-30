@@ -13,11 +13,14 @@ h2, .h2 {
   border-bottom: solid;
   padding: 4px;
 }
+h2, .h2, h3, .h3, h4, .h4 {
+  font-weight: bold;
+}
 
 /* Section div margins */
 
 div.level2 {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 div.level3 {
   margin-top: 50px;
